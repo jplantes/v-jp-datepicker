@@ -21,6 +21,7 @@ export default defineConfig({
       tsconfigPath: './tsconfig.app.json',
     }),
   ],
+  publicDir: 'v-jp-datepicker',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
