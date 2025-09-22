@@ -1,0 +1,66 @@
+{
+  "description": "A simple, customizable, and reusable date picker component for Vue 3 with Tailwind CSS.",
+  "author": {
+    "name": "Juan Pablo Pérez Lantes",
+    "email": "jplantes@gmail.com",
+    "url": "https://github.com/jplantes"
+  },
+  "name": "v-jp-datepicker",
+  "version": "0.0.17",
+  "main": "./dist/v-jp-datepicker.umd.js",
+  "module": "./dist/v-jp-datepicker.es.js",
+  "types": "./dist/index.d.ts",
+  "skipLibCheck": true,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/v-jp-datepicker.es.js",
+      "require": "./dist/v-jp-datepicker.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "type-check": "vue-tsc --build",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "4.1.13",
+    "tailwindcss": ">=4.0.0",
+    "vue": ">=3.4.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "22.0.2",
+    "@types/node": "22.16.5",
+    "@vitejs/plugin-vue": "6.0.1",
+    "@vue/eslint-config-prettier": "10.2.0",
+    "@vue/eslint-config-typescript": "14.6.0",
+    "@vue/tsconfig": "0.7.0",
+    "eslint": "9.31.0",
+    "eslint-plugin-vue": "10.3.0",
+    "jiti": "2.4.2",
+    "npm-run-all2": "8.0.4",
+    "prettier": "3.6.2",
+    "typescript": "5.9.2",
+    "vite": "7.0.6",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-vue-devtools": "8.0.0",
+    "vue-tsc": "^3.0.4"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=4.0.0",
+    "vue": ">=3.4.0"
+  }
+}
